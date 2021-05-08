@@ -1,0 +1,13 @@
+﻿@model StringInputModel
+
+<form method="post">
+    <label asp-for="Left"></label>
+    <input asp-for="Left" />
+    <label asp-for="Right"></label>
+    <input asp-for="Right" />
+
+    <input type="submit" asp-action="Concat" value="Concat" />
+    <input type="submit" asp-action="Compare" value="Compare" />
+</form>
+
+<p>@Model?.Result</p>
